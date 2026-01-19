@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    animation: gradientShift 10s infinite alternate;
+}
+
+@keyframes gradientShift {
+    0% { background: linear-gradient(135deg, #1e3c72, #2a5298); }
+    50% { background: linear-gradient(135deg, #2a5298, #1e3c72); }
+    100% { background: linear-gradient(135deg, #1e3c72, #2a5298); }
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 90%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    color: black;
+}
+
+th {
+    background-color: #3498db;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+ul li {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-in-out;
+    color: #2980b9;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #2980b9;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Break Styles */
+.break {
+    background-color: #e74c3c;
+    color: white;
+    font-weight: bold;
+}
+
+/* Live Clock Styles */
+.live-clock {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    table {
+        font-size: 0.9rem;
+    }
+    .live-clock {
+        font-size: 1.2rem;
+    }
+}

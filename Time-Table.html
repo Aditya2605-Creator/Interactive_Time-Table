@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Time Table</title>
+    <link rel="stylesheet" href="style time-table.css">
+</head>
+<body>
+    <h1>Time Table</h1>
+    <div class="live-clock" id="liveClock">Loading Time...</div>
+    <table>
+        <thead>
+            <tr>
+                <th>Time\Day</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>   
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>8:30am to 9:25am</th>
+                <td><a href="MP.html">MP</a></td>
+                <td><a href="SE.html">SE</a></td>
+                <td><a href="SE.html">SE</a></td>
+                <td><a href="M-3.html">M-3</a></td>
+                <td><a href="DSA.html">DSA</a></td>
+            </tr>
+            <tr>
+                <th>9:25am to 10:20am</th>
+                <td><a href="SE.html">SE</a></td>
+                <td><a href="DSA.html">DSA</a></td>
+                <td><a href="MP.html">MP</a></td>
+                <td><a href="SE.html">SE(SLS)</a></td>
+                <td><a href="M-3.html">M-3</a></td>
+            </tr>
+            <tr>
+                <th>10:20am to 10:35am</th>
+                <td colspan="5" class="break">Tea-Break</td>
+            </tr>
+            <tr>
+                <th>10:35am to 11:30am</th>
+                <td rowspan="2"><a href="STP.html">STP</a></td>
+                <td rowspan="2"><a href="STP.html">STP</a></td>
+                <td rowspan="2">PBL</td>
+                <td rowspan="2"><a href="DSA.html">SEA2-DSAL</a></td>
+                <td rowspan="2"><a href="DSA.html">SEA3-DSAL</a></td>
+            </tr>
+            <tr>
+                <th>11:30am to 12:25pm</th>
+            </tr>
+            <tr>
+                <th>12:25pm to 01:10pm</th>
+                <td colspan="5" class="break">Lunch-Break</td>
+            </tr>
+            <tr>
+                <th>01:10pm to 02:05pm</th>
+                <td><a href="DSA.html">DSA</a></td>
+                <td><a href="MP.html">MP</a></td>
+                <td><a href="PPL.html">PPL</a></td>
+                <td><a href="CC.html">CC</a></td>
+                <td><a href="PPL.html">PPL</a></td>
+            </tr>
+            <tr>
+                <th>02:05pm to 03:00pm</th>
+                <td><a href="PPL.html">PPL</a></td>
+                <td><a href="MP.html">MP</a></td>
+                <td><a href="M-3.html">M-3</a></td>
+                <td><a href="PPL.html">PPL</a></td>
+                <td><a href="M-3.html">M-3</a></td>
+            </tr>
+            <tr>
+                <th>03:00pm to 03:45pm</th>
+                <td rowspan="2"><a href="DSA.html">SEA2-DSAL</a></td>
+                <td rowspan="2"><a href="DSA.html">SEA1-DSAL</a><br><a href="DSA.html">SEA2-MP</a></td>
+                <td><a href="DSA.html">DSA</a></td>
+                <td rowspan="2"><a href="DSA.html">SEA3-DSAL</a><br><a href="DSA.html">SEA1-MP</a></td>
+                <td rowspan="2"><a href="DSA.html">SEA1-DSAL</a><br><a href="DSA.html">SEA3-MP</a></td>
+            </tr>
+            <tr>
+                <th>03:45pm to 04:40pm</th>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Subjects:</h3>
+    <p>"Click on the subject to know more about it!!!"</p>
+    <ul>
+        <li><a href="SE.html">SE :- Software Engineering</a></li>
+        <li><a href="M-3.html">M-3 :- Mathematics 3</a></li>
+        <li><a href="DSA.html">DSA :- Data Structure and Algorithms</a></li>
+        <li><a href="MP.html">MP :- Microprocessor</a></li>
+        <li><a href="PPL.html">PPL :- Principles of Programming Languages</a></li>
+        <li><a href="STP.html">STP :- Student Training Program</a></li>
+        <li><a href="CC.html">CC :- Code of Conduct</a></li>
+    </ul>
+
+    <h3>Faculty:</h3>
+    <ul>
+        <li>SE :- Prof. Shreyesh S. Shinde</li>
+        <li>M-3 :- Prof. Amol P. Udawant</li>
+        <li>DSA :- Prof. Jyoti R. Dhumal</li>
+        <li>MP :- Prof. Vikram M. Chavan</li>
+        <li>PPL :- Prof. Shriganesh S. Mane</li>
+        <li>CC :- Prof. Vikram M. Chavan</li>
+    </ul>
+
+    <script>
+        // Live Clock Functionality
+        function updateClock() {
+            const now = new Date();
+            const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            const day = days[now.getDay()];
+            const date = now.getDate();
+            const month = months[now.getMonth()];
+            const year = now.getFullYear();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const liveClock = document.getElementById('liveClock');
+            liveClock.innerHTML = `Today is ${day}, ${date} ${month} ${year}<br>Current Time: ${hours}:${minutes}:${seconds}`;
+        }
+        setInterval(updateClock, 1000);
+        updateClock(); // Initial call to display time immediately
+    </script>
+</body>
+</html>

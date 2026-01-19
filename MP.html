@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP</title>
+    <link rel="stylesheet" href="style subject.css">
+</head>
+<body>
+    <a href="Time-Table.html" class="back-button">&lt;&lt; Back</a>
+    <h2>Microprocessor</h2>
+    <h2>Faculty Name:</h2>
+    <ul>
+        <li>Prof. Vikram M. Chavan</li>
+    </ul>
+
+    <h3>Qualifications:</h3>
+    <ul>
+        <li>ME (E&TC)</li>
+        <li>VLSI & Embedded System</li>
+    </ul>
+
+    <h2>SEA Student List</h2>
+    <input type="text" id="searchBar" placeholder="Search by name or PRN...">
+    <div class="table-container">
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Sr. No.</th>
+                    <th onclick="sortTable(1)">PRN No.</th>
+                    <th onclick="sortTable(2)">Roll No</th>
+                    <th onclick="sortTable(3)">Name of Student</th>
+                    <th onclick="sortTable(4)">Attendance</th>
+                    <th>Daily Attendance</th>
+                    <th>Updated Attendance %</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td> <td>72316572G</td> <td>SCA01</td> <td>UBALE SHARMA</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>2</td> <td>72316747G</td> <td>SCA02</td> <td>PAYGUDE ASMITA SUSHILKUMAR</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>3</td> <td>72316345G</td> <td>SCA03</td> <td>KALE MANAS PANDURANG</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>4</td> <td>72316360F</td> <td>SCA04</td> <td>KHARAT PRATIKSHA SOMNATH</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>5</td> <td>72316368F</td> <td>SCA05</td> <td>KHAN SHAHRUKH SHAHID</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>6</td> <td>72316347C</td> <td>SCA07</td> <td>KALE SHRUSHTI ULHAS</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>7</td> <td>72316243G</td> <td>SCA08</td> <td>DHOLE VAISHNAVI SANJAY</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>8</td> <td>72316195F</td> <td>SCA09</td> <td>SAVKAR ANKUSH SATISH</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>9</td> <td>72316572M</td> <td>SCA11</td> <td>VEER ADITYA DAMODAR</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>10</td> <td>72316172M</td> <td>SCA12</td> <td>SINGH ADITYA RAJ RAMLAL SINGH</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>11</td> <td>72316172M</td> <td>SCA13</td> <td>PATIL ADITYA RAVINDRA</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>12</td> <td>72316521M</td> <td>SCA14</td> <td>KAMBLE ARYAN LOKESH</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>13</td> <td>72316242F</td> <td>SCA15</td> <td>DALVI ABHINAV SANTOSH</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>14</td> <td>72316532K</td> <td>SCA16</td> <td>KAMBLE HARSHAL SANDIP</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>15</td> <td>72316351X</td> <td>SCA17</td> <td>THOKANE OM ASHOK</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>16</td> <td>72316491C</td> <td>SCA18</td> <td>TUPE SAKSHI AJIT</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>17</td> <td>72316391C</td> <td>SCA19</td> <td>RAJPUT PRAGATI GOPALSING</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>18</td> <td>72316490C</td> <td>SCA20</td> <td>LABADE ADITYA ASHOK</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>19</td> <td>72316367A</td> <td>SCA21</td> <td>KADAM JAYSHREE RAJU</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>20</td> <td>72316280F</td> <td>SCA22</td> <td>GAIKWAD VAIBHAV SHIVAJI</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>21</td> <td>72316281K</td> <td>SCA23</td> <td>DESHMUKH GAURAV MAHESH</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>22</td> <td>72316278F</td> <td>SCA24</td> <td>HERWADE PRITESH MADHUKAR</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>23</td> <td>72316287F</td> <td>SCA25</td> <td>GHADAGE PRASHANT BABASAHEB</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>24</td> <td>72316314X</td> <td>SCA26</td> <td>AHER DEEPAK VASANT</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>25</td> <td>72316317C</td> <td>SCA27</td> <td>KALWAR RITESH PRABHAKAR</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>26</td> <td>72316329A</td> <td>SCA28</td> <td>MANDOLE SHREYAS SATISH</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>27</td> <td>72316454B</td> <td>SCA29</td> <td>PATIL MOHIT ANIL</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>28</td> <td>72316578F</td> <td>SCA30</td> <td>VIRDANDE OM VIJAY</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>29</td> <td>72316350C</td> <td>SCA31</td> <td>DESHMANE ATHARV GANESH</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>30</td> <td>72316368A</td> <td>SCA32</td> <td>KULKARNI OMKAR ASHOK</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>31</td> <td>72316350C</td> <td>SCA33</td> <td>PATHAK SHANTANU SHASHANK</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>32</td> <td>72316180B</td> <td>SCA34</td> <td>ANSARI MOHAMMAD ASHAN SHAKEEL</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>33</td> <td>72316331C</td> <td>SCA35</td> <td>GUPTE PRIYANKA BHARAT</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>34</td> <td>72316336R</td> <td>SCA36</td> <td>JATHAR VINAYAK SUBHASH</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>35</td> <td>72316273F</td> <td>SCA37</td> <td>GAIKWAD ADITYA BHARAT</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>36</td> <td>72316369D</td> <td>SCA39</td> <td>KHARADE SHUBHAM RAMKISAN</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>37</td> <td>72316402K</td> <td>SCA40</td> <td>BHASKAR MANASVI MADAN</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>38</td> <td>72316348L</td> <td>SCA42</td> <td>PATEL CHETNA KAILAS</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>39</td> <td>72316424L</td> <td>SCA43</td> <td>MORE PRASHANT MARUTI</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>40</td> <td>72316235C</td> <td>SCA44</td> <td>CHAVAN SUMIT ASHOK</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>41</td> <td>72316505K</td> <td>SCA45</td> <td>IHARE ABHINAV SUDHAKAR</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>42</td> <td>72316356L</td> <td>SCA46</td> <td>THAKARE ATHARVA SHIVAJI</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>43</td> <td>72316245L</td> <td>SCA47</td> <td>DAS PRATIKSHA KARTIK</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>44</td> <td>72316332K</td> <td>SCA48</td> <td>JADHAV SUESHA GANESH</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>45</td> <td>72316199C</td> <td>SCA49</td> <td>BANSODE NIKITA NILU</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>46</td> <td>72316381D</td> <td>SCA50</td> <td>KOTKAR HARSHVARDHAN SANTOSH</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>47</td> <td>72316353D</td> <td>SCA51</td> <td>PATIL MOHIL PRAKASH</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>48</td> <td>72316330C</td> <td>SCA52</td> <td>GAIKWAD PARTH DEEPAK</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>49</td> <td>72316335S</td> <td>SCA53</td> <td>JOSHI YASH SURESH</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>50</td> <td>72316333C</td> <td>SCA54</td> <td>JILATE YASHORATNA HARSHVIR</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>51</td> <td>72316288B</td> <td>SCA55</td> <td>DHARPALE SHRUTI AVINASH</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>52</td> <td>72316362C</td> <td>SCA56</td> <td>BALKAWADE ADITYA BALKRISHNA</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>53</td> <td>72316361C</td> <td>SCA57</td> <td>TAKUNDDE TANMAY NARENDRA</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>54</td> <td>72316320M</td> <td>SCA58</td> <td>JADHAV SARTHAK RAVIKANT</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>55</td> <td>72316314K</td> <td>SCA58</td> <td>SARGAIYYE MADHURI MOHNIRAJ</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>56</td> <td>72316360A</td> <td>SCA59</td> <td>SHINDE ASHISH GIRISH</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>57</td> <td>72316361K</td> <td>SCA60</td> <td>KARMARKAR PIYUSH VINOD</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>58</td> <td>72316363D</td> <td>SCA61</td> <td>JADHAV ADITI MADHUKAR</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>59</td> <td>72316364K</td> <td>SCA62</td> <td>JADHAV ADITYA KASHINATH</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>60</td> <td>72316346K</td> <td>SCA63</td> <td>GORE OMKAR NANDKUMAR</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>61</td> <td>72316365A</td> <td>SCA64</td> <td>PATIL ADITI SUNIL</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>62</td> <td>72316364C</td> <td>SCA65</td> <td>KALE SANTOSH NANDU</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>63</td> <td>72316355D</td> <td>SCA66</td> <td>KARHALE GOPAL SANTOSH</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>64</td> <td>72316350G</td> <td>SCA67</td> <td>SAH SONU BHUKHAR</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>65</td> <td>72316368C</td> <td>SCA70</td> <td>NIKAM SHREYA BHASKAR</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>66</td> <td>72316363D</td> <td>SCA71</td> <td>SUTAR PRANJAL PANDHARINATH</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>67</td> <td>72316362B</td> <td>SCA72</td> <td>BHURE SUPRIYA VASUDEV</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>68</td> <td>72316360A</td> <td>SCA73</td> <td>SHINDE SANKAJ SANJAY</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>69</td> <td>72316361K</td> <td>SCA74</td> <td>CHATE SAKSHI BALKU</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+                <tr><td>70</td> <td>72316550F</td> <td>SCA75</td> <td>SURTI KENNETH SANJAY</td> <td>0</td><td><input type="checkbox" class="daily-attendance"></td><td class="updated-attendance">100</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2>Syllabus</h2>
+    <div class="syllabus-item">
+        <summary>1. Introduction to 80386</summary>
+        <p>Brief History of Intel Processors, 80386 DX Features and Architecture, Programmers Model, Operating modes, Addressing modes and data types.
+            Applications Instruction Set Data Movement Instructions, Binary Arithmetic Instructions, Decimal Arithmetic Instructions, Logical Instructions, 
+            Control Transfer Instructions, String and Character Transfer Instructions, Instructions for Block Structured Language, Flag Control Instructions, 
+            Coprocessor Interface Instructions, Segment Register Instructions, Miscellaneous Instructions.</p>
+    </div>
+    <div class="syllabus-item">
+        <summary>2. Bus Cycles and System Architecture</summary>
+        <p>Initialization Processor State after Reset. Functional pin Diagram, functionality of various pins, I/0 Organization, Memory Organization (Memory banks), Basic memory read and writes cycles with timing diagram.
+            Systems Architecture Systems Registers (Systems flags, Memory Management registers, Control registers, Debug registers, Test registers), System Instructions.</p>
+    </div>
+    <div class="syllabus-item">
+        <summary>3. Memory Management</summary>
+        <p>Global Descriptor Table, Local Descriptor Table, Interrupt Descriptor Table, GOTR, LDTR, IDTR Formats of Descriptors and Selector, Segment Translation, Page Translation, Combining Segment and Page Translation</p>
+    </div>
+    <div class="syllabus-item">
+        <summary>4. Protection</summary>
+        <p>Need of Protection, Overview of 80386DX Protection Mechanisms: Protection rings and levels, Privileged Instructions, Concept of DPL, CPL, RPL, EPL.
+            Inter privilege level transfers using Call gates, Conforming code segment, Privilege levels and stacks. Page Level Protection, Combining Segment and Page Level Protection.</p>
+    </div>
+    <div class="syllabus-item">
+        <summary>5. Multitasking and Virtual 8086 Mode</summary>
+        <p>Multitasking- Task State Segment, TSS Descriptor, Task Register, Task Gate Descriptor, Task Switching, Task Linking, Task Address Space.
+            Virtual Mode-Features, Memory management in Virtual Mode, Entering and leaving Virtual mode.</p>
+    </div>
+    <div class="syllabus-item">
+        <summary>6. Interrupts, Exceptions and Introduction to Microcontroller</summary>
+        <p>Interrupts and Exceptions: Identifying Interrupts, Enabling and Disabling Interrupts, Priority among Simultaneous Interrupts and Exceptions, Interrupt Descriptor Table (IDT), IDT Descriptors, Interrupt Tasks and Interrupt Procedures, Error Code, and Exception Conditions.
+            Introduction to Microcontrollers: Architecture of typical Microcontroller, Difference between Microprocessor and Microcontroller, Characteristics of microcontrollers, Application of Microcontrollers.</p>
+    </div>
+    
+    
+
+    <a href="Time-Table.html" class="back-button">&lt;&lt; Back</a>
+
+    <script>
+       // Search Functionality
+       const searchBar = document.getElementById('searchBar');
+        const table = document.getElementById('studentTable');
+        const rows = table.getElementsByTagName('tr');
+
+        searchBar.addEventListener('input', () => {
+            const searchTerm = searchBar.value.toLowerCase();
+            for (let i = 1; i < rows.length; i++) {
+                const row = rows[i];
+                const cells = row.getElementsByTagName('td');
+                let match = false;
+                for (let j = 0; j < cells.length; j++) {
+                    if (cells[j].textContent.toLowerCase().includes(searchTerm)) {
+                        match = true;
+                        break;
+                    }
+                }
+                row.style.display = match ? '' : 'none';
+            }
+        });
+
+        // Table Sorting Functionality
+        function sortTable(columnIndex) {
+            const rows = Array.from(table.getElementsByTagName('tr')).slice(1);
+            rows.sort((a, b) => {
+                const aValue = a.getElementsByTagName('td')[columnIndex].textContent;
+                const bValue = b.getElementsByTagName('td')[columnIndex].textContent;
+                return aValue.localeCompare(bValue, undefined, { numeric: true });
+            });
+            table.tBodies[0].append(...rows);
+        }
+
+        // Update Attendance Percentage
+        const dailyAttendanceCheckboxes = document.querySelectorAll('.daily-attendance');
+        dailyAttendanceCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                const row = checkbox.closest('tr');
+                const attendanceCell = row.querySelector('td:nth-child(5)');
+                const updatedAttendanceCell = row.querySelector('.updated-attendance');
+
+                let totalClasses = 100; // Assuming total classes are 100
+                let presentClasses = parseInt(attendanceCell.textContent);
+
+                if (checkbox.checked) {
+                    presentClasses += 1; // Increment present classes if checked
+                } else {
+                    presentClasses -= 1; // Decrement present classes if unchecked
+                }
+
+                const updatedPercentage = ((presentClasses / totalClasses) * 100).toFixed(2);
+                updatedAttendanceCell.textContent = updatedPercentage;
+                attendanceCell.textContent = presentClasses;
+            });
+        });
+    </script>
+</body>
+</html>
